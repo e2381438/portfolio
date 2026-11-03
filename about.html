@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<!--
+Student Name: Florencio Sanchez
+File Name: about.html
+Date: 11/02/2026
+Chapter 9: Added audio introduction and transcript
+Chapter 11: Updated SEO metadata and added a footer social media icon.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Learn about Florencio Sanchez, a fifth-grade science teacher developing skills in web design, software development, and programming.">
+<title>About Florencio Sanchez | Educator & Developer</title>
+<!-- Google Fonts: DM Sans for responsive typography. -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<div class="container header-layout">
+<div class="header-copy">
+<h1>Florencio Sanchez</h1>
+<h2>Educator Exploring Software Development</h2>
+
+</div>
+<figure class="profile-figure">
+<img alt="Portrait of Florencio Sanchez in a navy blazer and white shirt" class="profile-photo" src="images/florencio-sanchez.jpg"/>
+<figcaption class="tagline"><span class="mobile-only">Building skills one project at a time.</span><span class="tablet-desk-only">Building practical skills one project at a time.</span></figcaption>
+</figure>
+</div>
+</header>
+<!-- Chapter 10: Responsive hamburger menu for mobile devices. -->
+<nav class="site-nav" aria-label="Main navigation">
+    <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="menu-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </span>
+        <span class="menu-toggle-label">Menu</span>
+    </button>
+
+<ul id="primary-menu">
+<li><a href="index.html">Home</a></li>
+<li><a aria-current="page" href="about.html">About Me</a></li>
+<li><a href="index.html#skills">Skills</a></li>
+<li><a href="index.html#projects">Projects</a></li>
+<li><a href="index.html#resume">Resume</a></li>
+<li><a href="learning.html">Learning</a></li><li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<!-- The main element contains content specific to this webpage. -->
+<main id="main-content">
+<section aria-labelledby="about-title" class="container hero">
+<p class="eyebrow">A little about me</p>
+<h2 id="about-title">Teaching, learning, and building new skills</h2>
+<article class="section-content" id="about-me">
+<p>I am a fifth-grade science teacher studying software development at Dallas College. I enjoy helping students understand how things work, and I am learning to apply that same curiosity to programming and web design.</p>
+<p>This website is a place to share what I am working on as I continue to grow my technology skills.</p>
+<h3>My background and interests</h3>
+<ul class="detail-list">
+<li>Teaching science and explaining new ideas clearly</li>
+<li>Building webpages with HTML and CSS</li>
+<li>Practicing Kotlin programming</li>
+<li>Learning SQL for database work</li>
+<li>Developing Python skills</li>
+<li>Working with others to solve problems</li>
+<li>Keeping up with new technology and continuing to learn</li>
+</ul>
+<p><a class="button" href="index.html#projects">Explore my projects →</a></p>
+</article>
+</section>
+
+<!-- Chapter 9: HTML5 audio player with MP3 and OGG sources and fallback text. -->
+<section class="container section audio-intro" aria-labelledby="audio-intro-heading">
+    <h2 id="audio-intro-heading">My Portfolio Audio Introduction</h2>
+    <p>Listen to a short introduction about my teaching background and journey into software development.</p>
+    <div class="audio-card">
+        <audio controls preload="metadata" aria-label="Portfolio audio introduction">
+            <source src="media/portfolio-introduction.mp3" type="audio/mpeg">
+            <source src="media/portfolio-introduction.ogg" type="audio/ogg">
+            Your browser does not support the HTML5 audio element.
+            <a href="media/portfolio-introduction.mp3">Download the audio introduction</a>.
+        </audio>
+        <p class="small">Select Play to hear the introduction. Audio does not start automatically.</p>
+        <details class="audio-transcript">
+            <summary>Read the audio transcript</summary>
+            <p>Hi, I'm Florencio Sanchez. I'm a fifth-grade science teacher studying software development at Dallas College. I'm learning HTML and CSS, Kotlin, SQL, and Python. This portfolio shares my projects and the skills I'm building for a career in technology. Thanks for visiting!</p>
+        </details>
+    </div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<p>© 2026 Florencio Sanchez. Personal Portfolio.</p>
+<p>Student email: <a href="mailto:e2381438@student.dcccd.edu">e2381438@student.dcccd.edu</a></p>
+        <!-- Chapter 11: Social media icon and link -->
+        <div class="footer-social">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub (opens in a new tab)">
+                <img src="images/github-mark.svg" alt="GitHub" width="32" height="32">
+                <span>Visit GitHub</span>
+            </a>
+        </div>
+</div>
+</footer>
+<!-- Chapter 10: JavaScript for the mobile navigation menu. -->
+<script src="scripts/script.js"></script>
+</body>
+</html>
+

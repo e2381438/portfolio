@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<!--
+Student Name: Florencio Sanchez
+File Name: contact.html
+Date: 11/02/2026
+Chapter 8: Added a contact form
+Chapter 11: Updated SEO metadata and added a footer social media icon.
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Florencio Sanchez about his software development portfolio, coursework, and interest in technology and education.">
+
+    <title>Contact Florencio Sanchez | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-layout">
+
+            <div class="header-copy">
+                <h1>Florencio Sanchez</h1>
+                <h2>Educator Exploring Software Development</h2>
+            </div>
+
+            <figure class="profile-figure">
+                <img src="images/florencio-sanchez.jpg"
+                     alt="Portrait of Florencio Sanchez in a navy blazer and white shirt"
+                     class="profile-photo">
+
+                <figcaption class="tagline">
+                    <span class="mobile-only">
+                        Building skills one project at a time.
+                    </span>
+                    <span class="tablet-desk-only">
+                        Building practical skills one project at a time.
+                    </span>
+                </figcaption>
+            </figure>
+
+        </div>
+    </header>
+
+    <!-- Chapter 10: Responsive hamburger menu for mobile devices. -->
+<nav class="site-nav" aria-label="Main navigation">
+    <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="menu-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </span>
+        <span class="menu-toggle-label">Menu</span>
+    </button>
+
+        <ul id="primary-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#resume">Resume</a></li>
+            <li><a href="learning.html">Learning</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content of the contact webpage -->
+    <main id="main-content">
+
+        <section class="container hero" aria-labelledby="contact-title">
+
+            <p class="eyebrow">Connect with me</p>
+            <h2 id="contact-title">Contact Information</h2>
+
+            <div class="section-content" id="contact-info">
+
+                <p>
+                    Thank you for visiting my portfolio.
+                    You can contact me about my coursework,
+                    projects, or opportunities to learn more
+                    about software development.
+                </p>
+
+                <p>
+                    <strong>Student email:</strong>
+                    <a href="mailto:e2381438@student.dcccd.edu">
+                        e2381438@student.dcccd.edu
+                    </a>
+                </p>
+
+                <p>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/e2381438"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        github.com/e2381438
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Chapter 8: New contact form -->
+        <section class="container section" aria-labelledby="form-title">
+
+            <h2 id="form-title">Send Me a Message</h2>
+
+            <p>
+                Have a question or want to connect?
+                Complete the form below.
+            </p>
+
+            <form class="contact-form"
+                  action="mailto:e2381438@student.dcccd.edu"
+                  method="post"
+                  enctype="text/plain">
+
+                <fieldset>
+
+                    <legend>Contact Form</legend>
+
+                    <!-- Name -->
+                    <label for="full-name">Full Name:</label>
+                    <input type="text"
+                           id="full-name"
+                           name="Full Name"
+                           placeholder="Enter your full name"
+                           autocomplete="name"
+                           required>
+
+                    <!-- Email -->
+                    <label for="email">Email Address:</label>
+                    <input type="email"
+                           id="email"
+                           name="Email"
+                           placeholder="Enter your email address"
+                           autocomplete="email"
+                           required>
+
+                    <!-- Phone -->
+                    <label for="phone">Phone Number (Optional):</label>
+                    <input type="tel"
+                           id="phone"
+                           name="Phone"
+                           placeholder="Enter your phone number"
+                           autocomplete="tel">
+
+                    <!-- Reason for Contact -->
+                    <label for="reason">Reason for Contact:</label>
+                    <select id="reason"
+                            name="Reason"
+                            required>
+                        <option value="">Select a reason</option>
+                        <option value="General Question">
+                            General Question
+                        </option>
+                        <option value="Software Development">
+                            Software Development
+                        </option>
+                        <option value="College Coursework">
+                            College Coursework
+                        </option>
+                        <option value="Professional Opportunity">
+                            Professional Opportunity
+                        </option>
+                        <option value="Other">
+                            Other
+                        </option>
+                    </select>
+
+                    <!-- Message -->
+                    <label for="message">Your Message:</label>
+                    <textarea id="message"
+                              name="Message"
+                              rows="6"
+                              placeholder="Write your message here..."
+                              required></textarea>
+
+                    <!-- Form Buttons -->
+                    <div class="form-buttons">
+                        <button type="submit">Submit Message</button>
+                        <button type="reset" class="reset-button">
+                            Clear Form
+                        </button>
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+            <p class="small">
+                Submitting this form attempts to open your
+                default email application. A message is not
+                sent automatically.
+            </p>
+
+        </section>
+
+        <!-- Existing college information and map -->
+        <section class="container section" aria-labelledby="college-title">
+
+            <h2 id="college-title">My College</h2>
+
+            <p>
+                I am studying software development at Dallas College.
+                The map below shows the Richland Campus, located at
+                <strong>12800 Abrams Road, Dallas, TX 75243</strong>.
+            </p>
+
+            <div class="map-frame">
+                <iframe
+                    src="https://www.google.com/maps?q=12800%20Abrams%20Road%2C%20Dallas%2C%20TX%2075243&amp;output=embed"
+                    width="680"
+                    height="380"
+                    title="Map of Dallas College Richland Campus"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p class="small">
+                If the map does not load,
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Dallas+College+Richland+Campus+12800+Abrams+Road+Dallas+TX+75243"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    open the campus location in Google Maps
+                </a>.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Florencio Sanchez. Personal Portfolio.</p>
+            <p>
+                Student email:
+                <a href="mailto:e2381438@student.dcccd.edu">
+                    e2381438@student.dcccd.edu
+                </a>
+            </p>
+                <!-- Chapter 11: Social media icon and link -->
+        <div class="footer-social">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub (opens in a new tab)">
+                <img src="images/github-mark.svg" alt="GitHub" width="32" height="32">
+                <span>Visit GitHub</span>
+            </a>
+        </div>
+</div>
+    </footer>
+
+<!-- Chapter 10: JavaScript for the mobile navigation menu. -->
+<script src="scripts/script.js"></script>
+</body>
+</html>

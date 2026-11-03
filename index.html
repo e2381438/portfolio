@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<!--
+Student Name: Florencio Sanchez
+File Name: index.html
+Date: 11/02/2026
+Chapter 8: Added Responsive Skills Table
+Chapter 11: Updated SEO metadata and added a footer social media icon.
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Florencio Sanchez's web design, Kotlin, SQL, and programming projects as a science educator studying software development.">
+
+    <title>Florencio Sanchez | Software Development Portfolio</title>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-layout">
+        <div class="header-copy">
+            <h1>Florencio Sanchez</h1>
+            <h2>Educator Exploring Software Development</h2>
+        </div>
+
+        <figure class="profile-figure">
+            <img src="images/florencio-sanchez.jpg"
+                 alt="Portrait of Florencio Sanchez in a navy blazer and white shirt"
+                 class="profile-photo">
+            <figcaption class="tagline">
+                <span class="mobile-only">Building skills one project at a time.</span>
+                <span class="tablet-desk-only">Building practical skills one project at a time.</span>
+            </figcaption>
+        </figure>
+    </div>
+</header>
+
+<!-- Chapter 10: Responsive hamburger menu for mobile devices. -->
+<nav class="site-nav" aria-label="Main navigation">
+    <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="menu-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </span>
+        <span class="menu-toggle-label">Menu</span>
+    </button>
+
+    <ul id="primary-menu">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#resume">Resume</a></li>
+        <li><a href="learning.html">Learning</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Main content of the homepage -->
+<main id="main-content">
+
+    <section class="hero container" aria-labelledby="welcome-title">
+        <p class="eyebrow">Welcome to my personal portfolio</p>
+        <h2 id="welcome-title">Learning to build the next chapter of my career.</h2>
+        <p>
+            I am a fifth-grade science teacher studying software development.
+            This website shares my background, the programming skills I am
+            developing, and examples of my coursework.
+        </p>
+        <p><a class="button" href="#projects">View my projects &rarr;</a></p>
+    </section>
+
+    <section class="container section" id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Me</h2>
+        <p>
+            I enjoy teaching students how things work, solving problems,
+            and learning new technology. I am working toward a career in
+            software development and using this portfolio to document my
+            progress. <a href="about.html">Read more about me</a>.
+        </p>
+    </section>
+
+    <section class="container section" id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills I Am Building</h2>
+
+        <ul class="skill-list">
+            <li>HTML and CSS</li>
+            <li>Kotlin</li>
+            <li>SQL</li>
+            <li>Python (learning)</li>
+            <li>Problem solving and communication</li>
+        </ul>
+
+        <!-- Chapter 8: Responsive technology skills table -->
+        <div class="table-scroll">
+            <table class="skills-table">
+                <caption>My Technology Skills</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Technology</th>
+                        <th scope="col">Experience Level</th>
+                        <th scope="col">How I'm Using It</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML and CSS</td>
+                        <td>Developing</td>
+                        <td>Building responsive websites</td>
+                    </tr>
+                    <tr>
+                        <td>Kotlin</td>
+                        <td>Learning</td>
+                        <td>Practicing programming fundamentals</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>Developing</td>
+                        <td>Writing database queries</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Beginning</td>
+                        <td>Learning programming concepts</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="container section" id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Coursework and Projects</h2>
+
+        <div class="project-grid">
+            <article class="project-card">
+                <h3>HTML and CSS Webpages</h3>
+                <p>Practice creating webpages with semantic HTML, navigation, and accessible layouts.</p>
+                <p class="small">Coursework area</p>
+            </article>
+
+            <article class="project-card">
+                <h3>Kotlin Programming</h3>
+                <p>Exercises using variables, functions, decisions, and loops to solve programming problems.</p>
+                <p class="small">Coursework area</p>
+            </article>
+
+            <article class="project-card">
+                <h3>SQL Databases</h3>
+                <p>Practice writing queries and organizing information in relational databases.</p>
+                <p class="small">Coursework area</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="container section" id="resume" aria-labelledby="resume-heading">
+        <h2 id="resume-heading">Resume and Experience</h2>
+        <p>
+            My teaching experience has strengthened my communication, planning,
+            teamwork, and problem-solving skills. I am combining that experience
+            with my software development coursework.
+        </p>
+        <p>
+            See more about the classes and projects I am working on
+            on my <a href="learning.html">Learning Journey</a> page.
+        </p>
+    </section>
+
+    <section class="container section" id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>
+            Interested in connecting about my work?
+            Visit my <a href="contact.html">contact page</a>
+            or email
+            <a href="mailto:e2381438@student.dcccd.edu">e2381438@student.dcccd.edu</a>.
+        </p>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2026 Florencio Sanchez. Personal Portfolio.</p>
+        <p>
+            Student email:
+            <a href="mailto:e2381438@student.dcccd.edu">
+                e2381438@student.dcccd.edu
+            </a>
+        </p>
+            <!-- Chapter 11: Social media icon and link -->
+        <div class="footer-social">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub (opens in a new tab)">
+                <img src="images/github-mark.svg" alt="GitHub" width="32" height="32">
+                <span>Visit GitHub</span>
+            </a>
+        </div>
+</div>
+</footer>
+
+<!-- Chapter 10: JavaScript for the mobile navigation menu. -->
+<script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<!--
+Student Name: Florencio Sanchez
+File Name: learning.html
+Date: 11/02/2026
+Chapter 11: Updated SEO metadata and added a footer social media icon.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Follow Florencio Sanchez as he studies HTML, CSS, Kotlin, SQL, and Python and builds projects while teaching fifth-grade science.">
+<title>Learning Journey | Florencio Sanchez</title>
+<!-- Google Fonts: DM Sans for responsive typography. -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<div class="container header-layout">
+<div class="header-copy">
+<h1>Florencio Sanchez</h1>
+<h2>Educator Exploring Software Development</h2>
+</div>
+<figure class="profile-figure">
+<img alt="Portrait of Florencio Sanchez in a navy blazer and white shirt" class="profile-photo" src="images/florencio-sanchez.jpg"/>
+<figcaption class="tagline"><span class="mobile-only">Building skills one project at a time.</span><span class="tablet-desk-only">Building practical skills one project at a time.</span></figcaption>
+</figure>
+</div>
+</header>
+<!-- Chapter 10: Responsive hamburger menu for mobile devices. -->
+<nav class="site-nav" aria-label="Main navigation">
+    <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="menu-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </span>
+        <span class="menu-toggle-label">Menu</span>
+    </button>
+
+<ul id="primary-menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="index.html#skills">Skills</a></li>
+<li><a href="index.html#projects">Projects</a></li>
+<li><a href="index.html#resume">Resume</a></li>
+<li><a aria-current="page" href="learning.html">Learning</a></li><li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<!-- The main element contains content specific to this webpage. -->
+<main id="main-content">
+<section aria-labelledby="learning-title" class="container hero">
+<p class="eyebrow">My learning journey</p>
+<h2 id="learning-title">Learning new skills, one project at a time</h2>
+<p>I teach fifth-grade science and I am also studying software development at Dallas College. I created this page to share the programming topics I am learning and how they connect to the projects I am building.</p>
+</section>
+<section aria-labelledby="learning-areas-title" class="container section">
+<h2 id="learning-areas-title">What I am working on</h2>
+<div class="learning-grid">
+<article class="learning-card">
+<h3>HTML &amp; CSS</h3>
+<p>I am learning how to structure webpages, style them, and make layouts work on mobile, tablet, and desktop screens.</p>
+<p class="small">Current focus: responsive design and semantic HTML</p>
+</article>
+<article class="learning-card">
+<h3>Kotlin</h3>
+<p>I am practicing classes, properties, and constructors. In one assignment, I created phone objects with their own brand, model, and price.</p>
+<p class="small">Current focus: object-oriented programming</p>
+</article>
+<article class="learning-card">
+<h3>SQL Databases</h3>
+<p>I am practicing database queries to organize information, find records, and update data while checking my results.</p>
+<p class="small">Current focus: writing and testing SQL queries</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="next-steps-title" class="container section">
+<h2 id="next-steps-title">How I plan to keep improving</h2>
+<p>I want to keep practicing with real assignments, fixing mistakes, and creating projects that I can add to my portfolio as my skills grow.</p>
+<aside aria-label="Portfolio goal" class="learning-aside">
+<h3>My goal</h3>
+<p>Keep building practical software development skills and use what I learn to solve problems in everyday situations.</p>
+<a class="button" href="index.html#projects">See my coursework</a>
+</aside>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<p>© 2026 Florencio Sanchez. Personal Portfolio.</p>
+<p>Student email: <a href="mailto:e2381438@student.dcccd.edu">e2381438@student.dcccd.edu</a></p>
+        <!-- Chapter 11: Social media icon and link -->
+        <div class="footer-social">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub (opens in a new tab)">
+                <img src="images/github-mark.svg" alt="GitHub" width="32" height="32">
+                <span>Visit GitHub</span>
+            </a>
+        </div>
+</div>
+</footer>
+<!-- Chapter 10: JavaScript for the mobile navigation menu. -->
+<script src="scripts/script.js"></script>
+</body>
+</html>
+
